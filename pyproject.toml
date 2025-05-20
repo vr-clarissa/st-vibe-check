@@ -50,6 +50,9 @@ dev = [
 [tool.pytest.ini_options]
 norecursedirs = [".*", "__pypackages__"]
 
+[tool.poetry]
+package-mode = false
+
 [project]
 name = "st-vibe-check"
 version = "1.0.0"
