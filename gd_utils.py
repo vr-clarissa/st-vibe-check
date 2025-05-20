@@ -12,9 +12,9 @@ def initialize_client():
     ]
 
     # Create API client
-    if os.path.exists(".streamlit/credentials.json"):
-        credentials = Credentials.from_service_account_file(".streamlit/credentials.json", scopes=scopes)
-        client = gspread.authorize(credentials)
+    if os.path.exists(".streamlit/secrets.toml"):
+        credentials = Credentials.from_service_account_info(st.secrets["gcp_service_account"], scopes=scopes)
+        client = gspread.Client(auth=credentials)
     else:
         client = None
 
