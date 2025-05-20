@@ -52,7 +52,7 @@ norecursedirs = [".*", "__pypackages__"]
 
 [project]
 name = "st-vibe-check"
-version = ""
+version = "1.0.0"
 description = ""
 authors = [
     { name = "Clarissa Vazquez", email = "vclarissa101@gmail.com" },
