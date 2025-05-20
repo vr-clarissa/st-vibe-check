@@ -20,3 +20,13 @@ A tool for tracking overall customer sentiment across submitted support tickets.
     pre-commit install
     ```
     This will get Black formatter and flake8 checker triggered on every commit you make to format and lint your code. You may benefit from integrating black and flake8 into your IDE of choice.
+
+## Steps for running the app locally
+1. Initialize your pdm shell by running `eval $(pdm venv activate)` from the command line.
+2. Start the app by running the following in the command line:
+   ```bash
+   streamlit run app_main.py
+   ```
+3. In the **Form Submission** tab, submit new mood logs. 
+4. Under the **Charts** tab, view the moods logged for today or the mood trends over time of day.
+5. Under the **Notes** tab, review moods logged with more context and details.
